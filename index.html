@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRIORA — Your Career Command Center</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" aria-label="PRIORA home">
+        <span class="brand-mark">P</span><span>PRIORA<span class="brand-dot">.</span></span>
+      </a>
+      <div class="workspace">
+        <div class="workspace-label">WORKSPACE</div>
+        <button class="workspace-button"><span class="workspace-avatar">N</span><span><strong>Nancy's workspace</strong><small>Student plan</small></span><span class="chevron">⌄</span></button>
+      </div>
+      <div class="nav-group">
+        <p class="nav-label">YOUR TOOLKIT</p>
+        <button class="nav-link active" data-view="overview"><span class="nav-icon">⌂</span> Overview</button>
+        <button class="nav-link" data-view="brain"><span class="nav-icon">✳</span> AI Career Brain <span class="nav-badge">AI</span></button>
+        <button class="nav-link" data-view="learning"><span class="nav-icon">▤</span> Learning & Productivity</button>
+        <button class="nav-link" data-view="preparation"><span class="nav-icon">▣</span> Career Preparation</button>
+        <button class="nav-link" data-view="opportunities"><span class="nav-icon">⌕</span> Opportunity Shield</button>
+        <button class="nav-link" data-view="student"><span class="nav-icon">◫</span> Student 360</button>
+      </div>
+      <div class="sidebar-bottom">
+        <div class="momentum-card">
+          <div class="momentum-icon">↗</div>
+          <strong>Keep your momentum</strong>
+          <p>You’re making progress. One focused step at a time.</p>
+          <button class="text-button" data-view="student">View your progress <span>→</span></button>
+        </div>
+        <button class="profile-row"><span class="profile-avatar">NB</span><span><strong>Nancy Bana</strong><small>B.Tech CSE Student</small></span><span class="chevron">···</span></button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile-menu" id="menuToggle" aria-label="Toggle navigation">☰</button>
+        <div class="breadcrumb">Workspace <span>/</span> <strong id="crumb">Overview</strong></div>
+        <div class="top-actions">
+          <label class="search-box"><span>⌕</span><input id="globalSearch" type="search" placeholder="Search anything..." /><kbd>⌘ K</kbd></label>
+          <button class="icon-button" id="notificationButton" aria-label="Notifications">♧<i></i></button>
+          <button class="top-avatar">NB</button>
+        </div>
+      </header>
+
+      <section class="page-content">
+        <div class="welcome-row">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> YOUR CAREER COMMAND CENTER</p>
+            <h1 id="pageTitle">Your career, <span>one clear direction.</span></h1>
+            <p class="intro" id="pageIntro">PRIORA helps students plan their career, learn smarter, prepare for opportunities, and track everything in one place.</p>
+            <div class="hero-actions"><button class="button button-dark" data-view="student">Open Dashboard <span>↗</span></button><button class="button button-light" data-view="brain">Explore PRIORA <span>→</span></button></div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+            <div class="art-sun"></div><div class="art-card art-card-one"><span class="tiny-check">✓</span><div><b>Daily focus</b><small>One step at a time</small></div></div>
+            <div class="art-card art-card-two"><span class="spark">✦</span><div><b>Career clarity</b><small>Your next move</small></div></div>
+            <div class="art-center"><span>p.</span></div>
+          </div>
+        </div>
+
+        <div class="stat-strip">
+          <div class="stat-intro"><div class="avatar-stack"><span>A</span><span>R</span><span>N</span></div><p>Built for every step<br>of your journey</p></div>
+          <div class="stat-main"><span class="muted-label">YOUR MOMENTUM</span><div class="status"><span class="status-dot"></span> On track</div><div class="readiness"><strong>68%</strong><span>Career readiness</span><div class="progress-track"><span style="width:68%"></span></div></div></div>
+          <div class="mini-stat"><div class="mini-stat-top"><span>Learning</span><strong>82%</strong></div><div class="progress-track"><span style="width:82%"></span></div><small>Keep your streak going</small></div>
+          <div class="mini-stat"><div class="mini-stat-top"><span>Skills</span><strong>74%</strong></div><div class="progress-track purple"><span style="width:74%"></span></div><small>You're getting stronger</small></div>
+        </div>
+
+        <section class="toolkit-section">
+          <div class="section-heading"><div><p class="eyebrow">ONE PLACE FOR WHAT'S NEXT</p><h2>Everything you need to move forward</h2><p class="section-subtitle">Small, consistent steps. A clearer path to your future.</p></div><button class="link-button" data-view="student">Open dashboard <span>→</span></button></div>
+          <div class="toolkit-grid">
+            <article class="tool-card card-peach" data-card="brain"><div class="card-top"><span class="card-icon">✳</span><span class="card-arrow">↗</span></div><p class="card-kicker">FIND YOUR DIRECTION</p><h3>AI Career Brain</h3><p>Find the gaps between where you are and where you want to go.</p><button class="card-link" data-view="brain">Map your next move <span>→</span></button><div class="card-decoration deco-brain">✳</div></article>
+            <article class="tool-card card-green" data-card="learning"><div class="card-top"><span class="card-icon">◷</span><span class="card-arrow">↗</span></div><p class="card-kicker">BUILD YOUR ROUTINE</p><h3>Learning & Productivity</h3><p>Turn big goals into focused sessions and consistent habits.</p><button class="card-link" data-view="learning">Build momentum daily <span>→</span></button><div class="card-decoration deco-learning">◌</div></article>
+            <article class="tool-card card-lilac" data-card="preparation"><div class="card-top"><span class="card-icon">▣</span><span class="card-arrow">↗</span></div><p class="card-kicker">SHOW WHAT YOU CAN DO</p><h3>Career Preparation</h3><p>Sharpen your resume and practice for the real conversation.</p><button class="card-link" data-view="preparation">Be ready for what's next <span>→</span></button><div class="card-decoration deco-prep">✧</div></article>
+            <article class="tool-card card-blue" data-card="opportunities"><div class="card-top"><span class="card-icon">⌕</span><span class="card-arrow">↗</span></div><p class="card-kicker">APPLY WITH CONFIDENCE</p><h3>Opportunity Shield</h3><p>Discover roles that fit and spot red flags before you apply.</p><button class="card-link" data-view="opportunities">Explore opportunities <span>→</span></button><div class="card-decoration deco-shield">◇</div></article>
+            <article class="tool-card card-yellow" data-card="student"><div class="card-top"><span class="card-icon">◫</span><span class="card-arrow">↗</span></div><p class="card-kicker">SEE THE FULL PICTURE</p><h3>Student 360</h3><p>Keep your skills, projects, and applications in one place.</p><button class="card-link" data-view="student">Your complete picture <span>→</span></button><div class="card-decoration deco-student">◎</div></article>
+          </div>
+        </section>
+
+        <section class="method-section">
+          <div class="method-copy"><p class="eyebrow">THE PRIORA METHOD</p><h2>Progress isn't a straight line.<br><span>It's a loop.</span></h2><p>Your career grows as you plan, learn, prepare, apply, analyze, and improve. Repeat the loop at your own pace.</p></div>
+          <div class="method-steps">
+            <div class="method-step"><span>01</span><b>PLAN</b><small>Know your direction</small></div><i>→</i>
+            <div class="method-step"><span>02</span><b>LEARN</b><small>Build your skills</small></div><i>→</i>
+            <div class="method-step"><span>03</span><b>PREPARE</b><small>Get opportunity-ready</small></div><i>→</i>
+            <div class="method-step"><span>04</span><b>APPLY</b><small>Take your shot</small></div><i>→</i>
+            <div class="method-step"><span>05</span><b>ANALYZE</b><small>Learn from results</small></div><i>→</i>
+            <div class="method-step"><span>06</span><b>IMPROVE</b><small>Keep growing</small></div>
+          </div>
+        </section>
+        <footer>© 2026 PRIORA. Your future, in focus. <span>Made for the journey ahead.</span></footer>
+      </section>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
